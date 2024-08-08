@@ -6,6 +6,7 @@
 - [Machine Learning Prediction](#machine-learning-prediction)
     - [Install dependencies](#install-dependencies)
     - [Data collection and analysis](#data-collection-and-analysis)
+    - [Separating features and target](#separating-features-and-target)
 
 ## Project Overview
 
@@ -35,3 +36,9 @@ Perform initial data loading, exploration, and preprocessing for a Parkinson's d
 - Examine the distribution of the target variable and drop an unnecessary column(s).
 - The data is grouped by the target variable to calculate mean values for each group.
 - Rename several columns for clarity.
+
+### Separating features and target
+- Separate the features and the target variable from the Parkinson's disease dataset.
+- Assign all feature columns (excluding status) to the DataFrame X and the target variable (status) to the Series Y.
+- Print both X and Y to inspect their contents.
+- Iterate over the feature column names and prints each one, which can be useful for later use, such as in creating user interfaces or web applications.
