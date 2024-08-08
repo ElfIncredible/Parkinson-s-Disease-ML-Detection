@@ -5,6 +5,7 @@
 - [Dataset](#dataset)
 - [Machine Learning Prediction](#machine-learning-prediction)
     - [Install dependencies](#install-dependencies)
+    - [Data collection and analysis](#data-collection-and-analysis)
 
 ## Project Overview
 
@@ -23,6 +24,14 @@ Matrix column entries (attributes):
 - **RPDE, D2** - Two nonlinear dynamical complexity measures
 - **DFA** - Signal fractal scaling exponent
 - s**pread1,spread2,PPE** - Three nonlinear measures of fundamental frequency variation
+
 ## Machine Learning Prediction
 ### Install dependencies
+Outline the essential steps for preparing data, training an SVM model, making predictions, and evaluating the model's accuracy.
 
+### Data collection and analysis
+Perform initial data loading, exploration, and preprocessing for a Parkinson's disease dataset.
+- Start by loading the dataset into a pandas DataFrame and then proceed to explore the data by displaying the first few rows, check the shape, summarize the data, list column names, generate descriptive statistics, and check for missing values.
+- Examine the distribution of the target variable and drop an unnecessary column(s).
+- The data is grouped by the target variable to calculate mean values for each group.
+- Rename several columns for clarity.
