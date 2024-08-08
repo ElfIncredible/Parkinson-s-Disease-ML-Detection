@@ -9,7 +9,8 @@
     - [Separating features and target](#separating-features-and-target)
     - [Splitting data into Train and Test data](#splitting-data-into-train-and-test-data)
     - [Data Standardization](#data-standardization)
-    - [Model training - Support Vector Machine](#model-training---upport-vector-machine)
+    - [Model training - Support Vector Machine](#model-training---support-vector-machine)
+    - [Model evaluation - Accuracy Score](#model-evaluation---accuracy-score)
 
 ## Project Overview
 
@@ -55,3 +56,11 @@ Perform initial data loading, exploration, and preprocessing for a Parkinson's d
 - Standardize the features by fitting a StandardScaler to the training data and transforming both the training and testing data. This ensures that the features have a mean of 0 and a standard deviation of 1, which can improve the performance of many machine learning algorithms.
 
 ### Model training - Support Vector Machine
+- Initialize a Support Vector Machine (SVM) classifier with a linear kernel. The SVM classifier is designed to find the best linear separation between the classes in the training dataset.
+- Train it using the standardized training data. Once trained, this classifier can be used to make predictions on new, unseen data.
+
+### Model evaluation - Accuracy Score
+- Evaluate the performance of the trained SVM classifier by calculating and printing the accuracy scores on both the training and testing datasets.
+- Make predictions on the training data and calculate the accuracy by comparing the predicted labels with the true labels.
+- Make predictions on the testing data and calculate the accuracy similarly. 
+- Print the accuracy scores for both the training and testing datasets, allowing you to assess how well the model performs on known and unseen data.
