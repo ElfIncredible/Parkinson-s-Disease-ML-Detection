@@ -13,6 +13,7 @@ This project aims to develop a machine learning model to predict whether a perso
     - [Model training - Support Vector Machine](#model-training---support-vector-machine)
     - [Model evaluation - Accuracy Score](#model-evaluation---accuracy-score)
     - [Building a predictive system](#building-a-predictive-system)
+    - [Saving the trained model](#saving-the-trained-model)
 
 ## Project Overview
 Parkinson's disease is a progressive neurological disorder that affects movement and can lead to significant disability. Early and accurate diagnosis is crucial for effective management and treatment. This project leverages data-driven approaches to aid in the early detection of the disease.
@@ -82,3 +83,11 @@ Build a system that:
 - Standardizes it using the previously fitted scaler,
 - Uses the trained SVM classifier to predict whether the person has Parkinson's disease.
 - The result of the prediction is then printed, along with an interpretation indicating whether the person is likely to have Parkinson's disease or not.
+
+### Saving the trained model
+- Save and load a trained machine learning model and its associated scaler using the pickle module.
+- Use these saved objects to make predictions on new data.
+    - Convert the new data into the required format
+    - Standardize it using the previously saved scaler
+    - Make a prediction using the loaded SVM model. 
+- Interpret and print whether the prediction indicates the presence of Parkinson's disease.
