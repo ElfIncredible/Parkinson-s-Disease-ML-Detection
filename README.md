@@ -11,6 +11,7 @@
     - [Data Standardization](#data-standardization)
     - [Model training - Support Vector Machine](#model-training---support-vector-machine)
     - [Model evaluation - Accuracy Score](#model-evaluation---accuracy-score)
+    - [Building a predictive system](#building-a-predictive-system)
 
 ## Project Overview
 
@@ -64,3 +65,11 @@ Perform initial data loading, exploration, and preprocessing for a Parkinson's d
 - Make predictions on the training data and calculate the accuracy by comparing the predicted labels with the true labels.
 - Make predictions on the testing data and calculate the accuracy similarly. 
 - Print the accuracy scores for both the training and testing datasets, allowing you to assess how well the model performs on known and unseen data.
+
+### Building a predictive system
+Build a system that:
+
+- Takes a new set of input features that represent a single data point.
+- Standardizes it using the previously fitted scaler,
+- Uses the trained SVM classifier to predict whether the person has Parkinson's disease.
+- The result of the prediction is then printed, along with an interpretation indicating whether the person is likely to have Parkinson's disease or not.
