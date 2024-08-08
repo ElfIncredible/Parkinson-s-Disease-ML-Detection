@@ -7,6 +7,7 @@
     - [Install dependencies](#install-dependencies)
     - [Data collection and analysis](#data-collection-and-analysis)
     - [Separating features and target](#separating-features-and-target)
+    - [Splitting data into Train and Test data](#splitting-data-into-train-and-test-data)
 
 ## Project Overview
 
@@ -32,7 +33,8 @@ Outline the essential steps for preparing data, training an SVM model, making pr
 
 ### Data collection and analysis
 Perform initial data loading, exploration, and preprocessing for a Parkinson's disease dataset.
-- Start by loading the dataset into a pandas DataFrame and then proceed to explore the data by displaying the first few rows, check the shape, summarize the data, list column names, generate descriptive statistics, and check for missing values.
+- Load the dataset into a pandas DataFrame.
+- Explore the data by displaying the first few rows, check the shape, summarize the data, list column names, generate descriptive statistics, and check for missing values.
 - Examine the distribution of the target variable and drop an unnecessary column(s).
 - The data is grouped by the target variable to calculate mean values for each group.
 - Rename several columns for clarity.
@@ -42,3 +44,8 @@ Perform initial data loading, exploration, and preprocessing for a Parkinson's d
 - Assign all feature columns (excluding status) to the DataFrame X and the target variable (status) to the Series Y.
 - Print both X and Y to inspect their contents.
 - Iterate over the feature column names and prints each one, which can be useful for later use, such as in creating user interfaces or web applications.
+
+### Splitting data into Train and Test data
+- Split the Parkinson's disease dataset into training and testing sets, with 80% of the data for training and 20% for testing.
+- Standardize the features by fitting a StandardScaler to the training data and transforming both the training and testing data. This ensures that the features have a mean of 0 and a standard deviation of 1, which can improve the performance of many machine learning algorithms.
+- Print the shapes of the original, training, and testing feature sets to verify the split.
