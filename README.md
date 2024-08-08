@@ -1,4 +1,5 @@
 # Parkinson's Disease - ML Detection
+This project aims to develop a machine learning model to predict whether a person has Parkinson's disease based on various biomedical voice measurements. Using a dataset containing features extracted from voice recordings of individuals. 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,6 +15,14 @@
     - [Building a predictive system](#building-a-predictive-system)
 
 ## Project Overview
+Parkinson's disease is a progressive neurological disorder that affects movement and can lead to significant disability. Early and accurate diagnosis is crucial for effective management and treatment. This project leverages data-driven approaches to aid in the early detection of the disease.
+
+**Goals:**
+- **Develop a Predictive Model:** Create a robust machine learning model capable of accurately predicting Parkinson's disease from voice measurements.
+- **Data Exploration and Preprocessing:** Understand the dataset's structure, clean the data, and preprocess it to ensure it is suitable for machine learning algorithms.
+- **Model Training and Evaluation:** Train a Support Vector Machine (SVM) classifier and evaluate its performance to ensure it generalizes well to new data.
+- **Make Predictions on New Data:** Use the trained model to predict the presence of Parkinson's disease in new, unseen data points.
+- **Raise Awareness:** Demonstrate the potential of machine learning in healthcare applications, specifically for the early detection of neurological disorders.
 
 ## Dataset
 This [dataset](https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set) is composed of a range of biomedical voice measurements from 31 people, 23 with Parkinson's disease (PD). Each column in the table is a particular voice measure, and each row corresponds to one of 195 voice recordings from these individuals ("name" column). The main aim of the data is to discriminate healthy people from those with PD, according to the "status" column which is set to 0 for healthy and 1 for PD.
@@ -29,7 +38,7 @@ Matrix column entries (attributes):
 - **status** - The health status of the subject (one) - Parkinson's, (zero) - healthy
 - **RPDE, D2** - Two nonlinear dynamical complexity measures
 - **DFA** - Signal fractal scaling exponent
-- s**pread1,spread2,PPE** - Three nonlinear measures of fundamental frequency variation
+- **Spread1,spread2,PPE** - Three nonlinear measures of fundamental frequency variation
 
 ## Machine Learning Prediction
 ### Install dependencies
