@@ -8,6 +8,8 @@
     - [Data collection and analysis](#data-collection-and-analysis)
     - [Separating features and target](#separating-features-and-target)
     - [Splitting data into Train and Test data](#splitting-data-into-train-and-test-data)
+    - [Data Standardization](#data-standardization)
+    - [Model training - Support Vector Machine](#model-training---upport-vector-machine)
 
 ## Project Overview
 
@@ -47,5 +49,9 @@ Perform initial data loading, exploration, and preprocessing for a Parkinson's d
 
 ### Splitting data into Train and Test data
 - Split the Parkinson's disease dataset into training and testing sets, with 80% of the data for training and 20% for testing.
-- Standardize the features by fitting a StandardScaler to the training data and transforming both the training and testing data. This ensures that the features have a mean of 0 and a standard deviation of 1, which can improve the performance of many machine learning algorithms.
 - Print the shapes of the original, training, and testing feature sets to verify the split.
+
+### Data Standardization
+- Standardize the features by fitting a StandardScaler to the training data and transforming both the training and testing data. This ensures that the features have a mean of 0 and a standard deviation of 1, which can improve the performance of many machine learning algorithms.
+
+### Model training - Support Vector Machine
